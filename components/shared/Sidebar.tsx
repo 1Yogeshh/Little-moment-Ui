@@ -1,7 +1,11 @@
 import React from 'react';
 import Image from 'next/image';
 
-function SidebarItem({ text }) {
+interface SidebarItemProps {
+  text: string; // Explicitly typing text as a string
+}
+
+function SidebarItem({ text }:SidebarItemProps) {
   return (
     <div className='flex items-center mb-8'>
       <div className='bg-[#35e3a4] rounded-full p-2'>
